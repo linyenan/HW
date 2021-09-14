@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOXFUL</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+
+    <style>
+        .btn-warning:hover {
+            color: #fff;
+            background-color: gold;
+            border-color: gold;
+        }
+
+        .banner-section>video {
+            min-width: 320px;
+            width: 100%;
+            height: auto;
+        }
+
+
+        .fixed-bottom a strong {
+            color: #00c4b3;
+            font-size: 22px;
+        }
+
+        .fixed-bottom a span {
+            color: #000;
+            font-size: 18px;
+        }
+
+        .logo1 {
+            width: 450px;
+        }
+
+        .title1 {
+            position: absolute;
+            z-index: -1;
+        }
+
+        /* .bannerh1 {
+            text-align: center;
+            font-size: 60px;
+
+        } */
+
+        /* .bannerh2 {
+            text-align: center;
+            font-size: 36px;
+        } */
+
+        .divider {
+            border-bottom: 3px solid #00c4b4;
+            width: 200px;
+            padding-top: 5px;
+        }
+
+        .bighead {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .feature-section {
+            margin-top: 70px;
+        }
+
+        .service-section {
+            background-color: #e2faf8;
+            height: auto;
+            width: 100%;
+            margin-top: 70px;
+        }
+
+        .service-section2 {
+            margin: auto;
+        }
+
+
+        .serivce-button {
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .card {
+            display: block;
+            margin: 0 auto;
+            border-radius: 40px;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+            /* border-radius: 30px; */
+
+        }
+
+        .service1 {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .service1-line {
+            width: 0%;
+            height: 2px;
+            background-color: darkgoldenrod;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all .3s linear;
+        }
+
+        .service1:hover .service1-line {
+            width: 100%
+        }
+
+
+        .success-section {
+            background-color: #e2faf8;
+            height: auto;
+            width: 100%;
+            margin-top: 70px;
+        }
+
+        .value-section {
+            background: url(./img/value-bg.jpeg) center center/cover no-repeat;
+            height: auto;
+            width: 100%;
+            margin-top: 0px;
+        }
+
+        hr {
+            border-left: 1px solid white;
+            height: 100%;
+        }
+
+        .value-container {
+            background-color: #00c4b3;
+            background-position: center;
+            height: 190px;
+            width: 90%;
+            border-radius: 50px;
+            margin-top: 30px;
+            margin-bottom: 100px;
+            margin-left: 60px;
+            padding-left: 100px;
+            padding-top: 25px;
+        }
+
+        .nav-value1 {
+            color: gold;
+            padding-right: 100px;
+            margin-top: 30px;
+            margin-right: 10px;
+        }
+
+        .nav-value2 {
+            color: #fff;
+        }
+
+        .nav-value-sm-container {
+            width: 90%;
+            max-width: 650px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .nav-value-sm {
+            background-color: #00c4b3;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .nav-value1-sm {
+            color: gold;
+            width: auto;
+        }
+
+        .nav-value2-sm {
+            color: #fff;
+            width: auto;
+        }
+
+
+        .call-section {
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section {
+            background-color: #00c4b3;
+            height: 260px;
+            width: 100%;
+            margin-bottom: 0px;
+            margin-top: -48px;
+        }
+
+        .footer1 {
+            padding-left: 100px;
+        }
+
+        .footer3 {
+            padding-right: 100px;
+            text-align: right;
+        }
+
+        .icon {
+            margin-top: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white align-items-center px-5 py-3">
+        <a class="navbar-brand" href="https://www.boxful.com.tw/fulfillment/zh"><img src="./img/logo1.webp" width="auto"
+                height="auto" class="logo1" alt=""></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+
+                <li class="nav-item"><a href="https://www.boxful.com.tw/fulfillment/zh/about-us" class="nav-link"
+                        style="font-size:20px;font-weight:bold;color: #000;">關於我們</a></li>
+                <li class="nav-item"><a href="https://www.boxful.com.tw/fulfillment/zh/eCommerce" class="nav-link"
+                        style="font-size:20px;font-weight:bold;color: #000;">電商出貨方案</a></li>
+                <li class="nav-item"><a href="https://www.boxful.com.tw/fulfillment/zh/crowdfunding" class="nav-link"
+                        style="font-size:20px;font-weight:bold;color: #000;">群募座談會</a></li>
+                <li class="nav-item"><a href="http://bit.ly/2WvFuJO" target="_blank" class="nav-link"
+                        style="font-size:20px;font-weight:bold;color: #000;">電商最新知</a></li>
+                <li class="nav-item"><a href="https://www.boxful.com.tw/fulfillment/zh/features" class="nav-link"
+                        style="font-size:20px;font-weight:bold;color: #000;">特色功能</a></li>
+                <li class="nav-item"><a href="https://www.boxful.com.tw/fulfillment/zh/quotation" class="nav-link"
+                        style="font-size:20px;font-weight:bold;color: #000;">服務項目</a></li>
+                <li class="nav-item"><a href="https://www.boxful.com.tw/fulfillment/zh/login" class="nav-link"
+                        style="font-size:20px;font-weight:bold;color: #000;">登入</a>
+                </li>
+                <li class="nav-item"><button type="button" class="btn btn-lg btn-warning"
+                        style="font-size:18px;font-weight:bold; border-radius: 25px;">預約諮詢</button></li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <nav class="navbar fixed-bottom navbar-light bg-warning">
+        <a class="navbar-brand mx-auto " href="https://www.boxful.com.tw/fulfillment/zh/eCommerce">
+            <strong>想了解電商平台出貨方案？</strong>
+            <span>立即取得免費報價！查看詳情</span>
+        </a>
+    </nav>
+
+
+    <div class="banner-section">
+        <video autoplay muted loop id="myVideo">
+            <source src="https://www.boxful.com.tw/fulfillment/build/imgs/home/banner_video-989d8101f9.mp4"
+                type="video/mp4">
+        </video>
+        <!-- <h1 class="bannerh1">您的最佳電商物流團隊</h1>
+        <h2 class="bannerh2">一站式倉儲物流服務｜專業電商出貨｜人性化倉儲管理系統</h2> -->
+    </div>
+
+
+    <div class="feature-section container">
+
+        <div class="heading">
+            <h2 class="bighead w-100 text-center mt-auto">BOXFUL七大特點解決供應鏈煩惱</h2>
+            <div class="divider mx-auto"></div>
+        </div>
+
+        <div class="row bg-boxful">
+            <div class="col-md content-img text-center">
+                <img src="./img/1-feature.png">
+            </div>
+            <div class="col-md my-auto content-text">
+                <div class="bh-box text-left">
+                    <div class="bh-title">
+                        <h3><i class="fas fa-caret-right"></i>&nbsp;提升效率的一站式服務</h3>
+                        <span class="small-title">雲端查看物件、專人服務，進出貨不用愁</span>
+                    </div>
+                    <div class="bh-content mx-auto">
+                        每個進入Boxful倉庫的貨物經過QC驗貨後，都會更新庫存資訊至Boxful雲端WMS倉儲管理系統中，讓您只要擁有網路，不論在哪都能查看貨物的即時動態，輕鬆預約進出貨。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-boxful">
+            <div class="col-md my-auto content-text">
+                <div class="bh-box text-left">
+                    <div class="bh-title">
+                        <h3><i class="fas fa-caret-right"></i>&nbsp;降低固定成本的彈性倉租</h3>
+                        <span class="small-title">按需付費，用多少付多少</span>
+                    </div>
+                    <div class="bh-content mx-auto">
+                        Boxful的彈性倉租計價讓您可以依照存放需求調整租用空間，只要東西出倉即不再計算倉租費用，讓您用多少付多少，有效節省固定成本提升競爭力。
+                    </div>
+                </div>
+            </div>
+            <div class="col-md content-img text-center">
+                <img src="./img/2-feature.png">
+            </div>
+        </div>
+        <div class="row bg-boxful">
+            <div class="col-md content-img text-center">
+                <img src="./img/3-feature.png">
+            </div>
+            <div class="col-md my-auto content-text">
+                <div class="bh-box text-left">
+                    <div class="bh-title">
+                        <h3><i class="fas fa-caret-right"></i>&nbsp;整合B2B通路的庫存調度系統</h3>
+                        <span class="small-title">即時掌握供應鏈下游需求</span>
+                    </div>
+                    <div class="bh-content mx-auto">
+                        不論您是經銷商、零售通路業者或連鎖店家，透過Boxful獨創的下游庫存調度系統，就能直接調貨給下游廠商，更能專注於公司業績成長。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-boxful">
+            <div class="col-md my-auto content-text">
+                <div class="bh-box text-left">
+                    <div class="div">
+                        <div class="bh-title">
+                            <h3><i class="fas fa-caret-right"></i>&nbsp;輕鬆完成電商B2C出貨</h3>
+                            <span class="small-title">串接各大電商平台，高效完成揀貨出貨</span>
+                        </div>
+                        <div class="bh-content mx-auto">
+                            Boxful提供各大電商平台串接服務，透過API拋接訂單，高效率完成揀貨出貨，並提供超商取貨、宅配等多通路配送，還支援跨境電商、開立電子發票、逆物流等服務。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md content-img text-center">
+                <img src="./img/4-feature.png">
+            </div>
+        </div>
+        <div class="row bg-boxful">
+            <div class="col-md content-img text-center">
+                <img src="./img/5-feature.png">
+            </div>
+            <div class="col-md my-auto content-text">
+                <div class="bh-box text-left">
+                    <div class="bh-title">
+                        <h3><i class="fas fa-caret-right"></i>&nbsp;企業專屬儀表板</h3>
+                        <span class="small-title">即時掌握庫存，預測進貨時機</span>
+                    </div>
+                    <div class="bh-content mx-auto">
+                        透過系統內建的企業專屬儀表板，您可以隨時檢視倉庫使用量及費用，並設有智慧預警系統及庫存預測系統，為您評估安全庫存水位，並即時掌握逆物流狀態，搶得先機！
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-boxful">
+            <div class="col-md my-auto content-text">
+                <div class="bh-box text-left">
+                    <div class="bh-title">
+                        <h3><i class="fas fa-caret-right"></i>&nbsp;雙北8小時快速到貨</h3>
+                        <span class="small-title">BOXFUL超速配，與消費者零時差</span>
+                    </div>
+                    <div class="bh-content mx-auto">
+                        想提供消費者24小時快速到貨的服務，但對24H商城的高佣金卻步嗎？現在，只要使用Boxful超速配，就能提供台北、新北8小時快速到貨的急速物流，用服務寵壞消費者，讓他再也離不開你！
+                    </div>
+                </div>
+            </div>
+            <div class="col-md content-img text-center">
+                <img src="./img/6-feature.png">
+            </div>
+        </div>
+        <div class="row bg-boxful">
+            <div class="col-md content-img text-center">
+                <img src="./img/7-feature.png">
+            </div>
+            <div class="col-md my-auto content-text">
+                <div class="bh-box text-left">
+                    <div class="bh-title">
+                        <h3><i class="fas fa-caret-right"></i>&nbsp;一站式跨境物流服務</h3>
+                        <span class="small-title">BOXFUL跨境物流，讓你賣爆全世界</span>
+                    </div>
+                    <div class="bh-content mx-auto">
+                        Boxful跨境物流整合多個快遞服務，提供優惠的快遞價格，批次匯入出貨委託單，由系統自動生成出口面單，此外，系統回拋物流追蹤貨號，讓您能即時追蹤跨境貨號，即時掌握出貨動態。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="service-section">
+
+        <div class="heading py-5">
+            <h2 class="bighead w-100 text-center mt-auto">BOXFUL完整你的電商物流體驗</h2>
+            <div class="divider mx-auto"></div>
+        </div>
+
+
+        <div class="service-section2">
+            <div class="container ">
+                <div class="card-deck mb-3 text-center">
+                    <div class="card mb-4 shadow-sm col-8 col-md-6 col-lg-4 col-xl-3 mt-5 ">
+                        <img src="https://www.boxful.com.tw/fulfillment/build/imgs/home/services/1-入倉驗收-08-f66f4a1627.svg"
+                            width="auto" height="auto" alt="">
+                        <h2 class="service1 w-100 mt-3 text-center">入倉驗收<div class="service1-line"></div>
+                        </h2>
+                    </div>
+                    <div class="card mb-4 shadow-sm col-8 col-md-6 col-lg-4 col-xl-3 mt-5">
+                        <img src="https://www.boxful.com.tw/fulfillment/build/imgs/home/services/2-訂單串接-10-9d069aa3ac.svg"
+                            width="auto" height="auto" alt="">
+
+                        <h2 class="service1 w-100 mt-3 text-center ">訂單串接 <div class="service1-line"></div>
+                        </h2>
+                    </div>
+                    <div class="card mb-4 shadow-sm col-8 col-md-6 col-lg-4 col-xl-3 mt-5">
+                        <img src="https://www.boxful.com.tw/fulfillment/build/imgs/home/services/3-揀貨出貨-09-e8204b77d8.svg"
+                            width="auto" height="auto" alt="">
+                        <h2 class="service1 w-100 mt-3 text-center ">揀貨出貨<div class="service1-line"></div>
+                        </h2>
+                    </div>
+                    <div class="card mb-4 shadow-sm col-8 col-md-6 col-lg-4 col-xl-3 mt-5">
+                        <img src="https://www.boxful.com.tw/fulfillment/build/imgs/home/services/4-配送-11-0f0bdff72f.svg"
+                            width="auto" height="auto" alt="">
+                        <h2 class="service1 w-100 mt-3 text-center">配送<div class="service1-line"></div>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="serivce-button text-center">
+            <a href="" class="btn btn-warning btn-lg rounded-pill">點我了解</a>
+        </div>
+
+    </div>
+
+    <div class="product-section">
+        <div class="heading py-5">
+            <h2 class="bighead w-100 text-center mt-auto">Boxful倉儲物流管理物件</h2>
+            <div class="divider mx-auto"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="card col-8 col-xl-3 mb-4">
+                    <img src="./img/card1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">庫存貨品</h3>
+                        <h5 class="card-text">降低倉儲固定成本</h5>
+                        <ul class="list-unstyled my-4">
+                            <li> 即時線上控管庫存</li>
+                            <li>依淡旺季調整倉儲空間</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="card col-8 col-xl-3 mb-4">
+                    <img src="./img/card2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h3 class="card-title ">電商倉儲</h3>
+                        <h5 class="card-text">高效率理貨出貨</h5>
+                        <ul class="list-unstyled my-4">
+                            <li> 即時線上控管庫存</li>
+                            <li>依淡旺季調整倉儲空間</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card col-8 col-xl-3 mb-4">
+                    <img src="./img/card3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h3 class="card-title ">公司文件檔案</h3>
+                        <h5 class="card-text">100%安全管理</h5>
+                        <ul class="list-unstyled my-4">
+                            <li> 即時線上控管庫存</li>
+                            <li>依淡旺季調整倉儲空間</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="serivce-button text-center">
+            <a href="" class="btn btn-warning btn-lg rounded-pill">了解更多</a>
+        </div>
+    </div>
+
+
+    <div class="success-section d-none d-md-block">
+
+        <div class="heading py-5">
+            <h2 class="bighead w-100 text-center mt-auto">BOXFUL成功客戶案例</h2>
+            <div class="divider mx-auto"></div>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/success1.svg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/success2.svg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/success3.svg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="serivce-button text-center">
+            <a href="" class="btn btn-warning btn-lg rounded-pill">更多案例</a>
+        </div>
+    </div>
+
+
+    <div class="success-section d-md-none ">
+
+        <div class="heading py-5">
+            <h2 class="bighead w-100 text-center mt-auto">BOXFUL成功客戶案例</h2>
+            <div class="divider mx-auto"></div>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/success4.svg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/success5.svg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/success6.svg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="serivce-button text-center">
+            <a href="" class="btn btn-warning btn-lg rounded-pill">更多案例</a>
+        </div>
+    </div>
+
+
+
+
+    <div class="value-section d-none d-xl-block">
+
+        <div class="heading py-5">
+            <h2 class="bighead w-100 text-center mt-auto">化繁為簡，BOXFUL讓你專注於最有價值的事情！</h2>
+        </div>
+        <div class="value-container">
+            <ul class="nav ">
+                <li class="nav-value">
+                    <h1 class="nav-value1">2,000,000+</h1>
+                    <h5 class="nav-value2">累積出貨訂單</h5>
+                </li>
+                <hr>
+                <li class="nav-value">
+                    <h1 class="nav-value1">4</h1>
+                    <h5 class="nav-value2">全球倉庫</h5>
+                </li>
+                <hr>
+                <li class="nav-value">
+                    <h1 class="nav-value1">99.9%</h1>
+                    <h5 class="nav-value2">出貨正確率</h5>
+                </li>
+                <hr>
+                <li class="nav-value">
+                    <h1 class="nav-value1">257%</h1>
+                    <h5 class="nav-value2">提升處理效率</h5>
+                </li>
+            </ul>
+        </div>
+        <div class="serivce-button text-center">
+            <a href="" class="btn btn-warning btn-lg rounded-pill">加入我們</a>
+        </div>
+    </div>
+
+    <div class="value-section d-xl-none">
+
+        <div class="heading py-5">
+            <h2 class="bighead w-100 text-center mt-auto">化繁為簡，BOXFUL讓你專注於最有價值的事情！</h2>
+        </div>
+
+        <div class="nav-value-sm-container">
+            <div class="nav-value-sm">
+                <h1 class="nav-value1-sm">2,000,000+</h1>
+                <h5 class="nav-value2-sm">累積出貨訂單</h5>
+            </div>
+            <hr>
+            <div class="nav-value-sm">
+                <h1 class="nav-value1-sm">4</h1>
+                <h5 class="nav-value2-sm">全球倉庫</h5>
+            </div>
+            <hr>
+            <div class="nav-value-sm">
+                <h1 class="nav-value1-sm">99.9%</h1>
+                <h5 class="nav-value2-sm">出貨正確率</h5>
+            </div>
+            <hr>
+            <div class="nav-value-sm">
+                <h1 class="nav-value1-sm">257%</h1>
+                <h5 class="nav-value2-sm">提升處理效率</h5>
+            </div>
+        </div>
+
+        <div class="serivce-button text-center">
+            <a href="" class="btn btn-warning btn-lg rounded-pill">加入我們</a>
+        </div>
+    </div>
+
+
+    <div class="call-section">
+        <h1 class="bighead w-100 text-center my-auto">#GrowTogether</h1>
+    </div>
+    <div class="contactus">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 div-three-person">
+                    <img src="./img/people.webp">
+                </div>
+                <div class="col-xl-8 col-12 help-txt">
+                    <div class="row help-row">
+
+                        <img src="./img/email.webp" width="50" height="50" alt="">
+
+                        <div class="bighead col-xl">
+                            聯絡我們
+                        </div>
+                        <div class="bighead">
+                            <img src="./img/phone.webp" width="50" height="50"> 0800-050-777
+                        </div>
+                        <div class="col-xl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <div class="container"></div>
+        <footer class=" pt-4 my-md-5 pt-md-5">
+            <div class="row">
+
+                <div class="footer1 col-6 col-md">
+                    <h2>Boxful</h2>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white" href="#">關於我們</a></li>
+                        <li><a class="text-white" href="#">功能特色</a></li>
+                        <li><a class="text-white" href="#">Boxful個人迷你倉</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h3 class="footer2-1">社群媒體</h3>
+                    <a href=""><img src="./img/facebook.svg" alt="" width="40px" height="40px"></a>
+                    <a href="#"><img src="./img/line.svg" alt="" width="40px" height="40px"></a>
+                    <a href="#"><img src="./img/instagram-alt.svg" alt="" width="40px" height="40px">
+                </div>
+                <div class="footer3 col-6 col-md">
+                    <img src="./img/logo2.webp" width="400" height="45" alt="">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="text-white" href="#">0800-050-777</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#"><img src="./img/email1.webp" width="20" height="20"
+                                    alt=""></a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#">105台北市松山區光復北路11巷44號11樓</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
